@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="AppTitle">システム日時変更</sys:String>
+
+    <sys:String x:Key="Past">過去</sys:String>
+    <sys:String x:Key="Future">未来</sys:String>
+
+    <sys:String x:Key="Minute">分</sys:String>
+    <sys:String x:Key="Hour">時</sys:String>
+    <sys:String x:Key="Day">日</sys:String>
+    <sys:String x:Key="Month">月</sys:String>
+    <sys:String x:Key="Year">年</sys:String>
+
+    <sys:String x:Key="MsgTagErr1">Tagエラー1</sys:String>
+    <sys:String x:Key="MsgTagErr2">Tagエラー2</sys:String>
+    <sys:String x:Key="MsgTagErr3">Tagエラー3</sys:String>
+    <sys:String x:Key="MsgTagErr4">Tagエラー4</sys:String>
+
+</ResourceDictionary>

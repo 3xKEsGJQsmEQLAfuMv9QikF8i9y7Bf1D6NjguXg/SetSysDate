@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="AppTitle">System Date and Time Change</sys:String>
+    
+    <sys:String x:Key="Past">Past</sys:String>
+    <sys:String x:Key="Future">Future</sys:String>
+
+    <sys:String x:Key="Minute">Minute</sys:String>
+    <sys:String x:Key="Hour">Hour</sys:String>
+    <sys:String x:Key="Day">Day</sys:String>
+    <sys:String x:Key="Month">Month</sys:String>
+    <sys:String x:Key="Year">Year</sys:String>
+
+    <sys:String x:Key="MsgTagErr1">Tag error 1.</sys:String>
+    <sys:String x:Key="MsgTagErr2">Tag error 2.</sys:String>
+    <sys:String x:Key="MsgTagErr3">Tag error 3.</sys:String>
+    <sys:String x:Key="MsgTagErr4">Tag error 4.</sys:String>
+
+</ResourceDictionary>
