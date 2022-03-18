@@ -1,5 +1,5 @@
 # SetSysDate
-Change the system date.
+Change the system date and time.
 
 Set to a date in the past or future based on the current date and time.
 
