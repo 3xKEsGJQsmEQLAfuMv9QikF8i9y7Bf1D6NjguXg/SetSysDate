@@ -52,126 +52,135 @@
         </Storyboard>
 
     </Window.Resources>
-    <ScrollViewer>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="18" />
+        </Grid.RowDefinitions>
+        
+        <ScrollViewer>
 
-        <StackPanel Orientation="Vertical">
-            <StackPanel.Resources>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Margin"
-                            Value="10" />
-                    <Setter Property="Padding"
-                            Value="15,10" />
-                    <EventSetter Event="ButtonBase.Click"
-                                 Handler="Button_Click" />
-                </Style>
-            </StackPanel.Resources>
-
-            <TextBlock Text="{StaticResource Past}"
-                       Foreground="White"
-                       FontWeight="Bold"
-                       Margin="10,10,10,0" />
-            
-            <WrapPanel>
-                <Button Content="{StaticResource Hour}"
-                        ContentStringFormat="1 {0}"
-                        Tag="-1H" />
-                <Button Content="{StaticResource Hour}"
-                        ContentStringFormat="12 {0}"
-                        Tag="-12H" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="1 {0}"
-                        Tag="-1D" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="2 {0}"
-                        Tag="-2D" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="7 {0}"
-                        Tag="-7D" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="10 {0}"
-                        Tag="-10D" />
-                <Button Content="{StaticResource Month}"
-                        ContentStringFormat="1 {0}"
-                        Tag="-1M" />
-                <Button Content="{StaticResource Month}"
-                        ContentStringFormat="2 {0}"
-                        Tag="-2M" />
-                <Button Content="{StaticResource Year}"
-                        ContentStringFormat="1 {0}"
-                        Tag="-1Y" />
-            </WrapPanel>
-
-            <Border Height="1"
-                    BorderThickness="1"
-                    Margin="10,0"
-                    BorderBrush="Silver" />
-
-            <TextBlock Text="{StaticResource Future}"
-                       Foreground="White"
-                       FontWeight="Bold"
-                       Margin="10,10,10,0" />
-
-            <WrapPanel>
-                <Button Content="{StaticResource Hour}"
-                        ContentStringFormat="1 {0}"
-                        Tag="+1H" />
-                <Button Content="{StaticResource Hour}"
-                        ContentStringFormat="12 {0}"
-                        Tag="+12H" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="1 {0}"
-                        Tag="+1D" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="2 {0}"
-                        Tag="+2D" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="7 {0}"
-                        Tag="+7D" />
-                <Button Content="{StaticResource Day}"
-                        ContentStringFormat="10 {0}"
-                        Tag="+10D" />
-                <Button Content="{StaticResource Month}"
-                        ContentStringFormat="1 {0}"
-                        Tag="+1M" />
-                <Button Content="{StaticResource Month}"
-                        ContentStringFormat="2 {0}"
-                        Tag="+2M" />
-                <Button Content="{StaticResource Year}"
-                        ContentStringFormat="1 {0}"
-                        Tag="+1Y" />
-            </WrapPanel>
-
-            <Border Height="1"
-                    BorderThickness="1"
-                    Margin="10,0"
-                    BorderBrush="Silver" />
-
-            <WrapPanel>
-                <WrapPanel.Resources>
-                    <Style TargetType="{x:Type TextBlock}">
-                        <Setter Property="Foreground"
-                                Value="White" />
+            <StackPanel Orientation="Vertical">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
                         <Setter Property="Margin"
-                                Value="0,10" />
-                        <Setter Property="FontFamily"
-                                Value="Consolas" />
-                        <Setter Property="FontSize"
-                                Value="14" />
+                                Value="10" />
+                        <Setter Property="Padding"
+                                Value="15,10" />
+                        <EventSetter Event="ButtonBase.Click"
+                                     Handler="Button_Click" />
                     </Style>
-                </WrapPanel.Resources>
+                </StackPanel.Resources>
 
-                <TextBlock Text="" Width="10" />
-                <TextBlock x:Name="ResultYear" />
-                <TextBlock Text="." />
-                <TextBlock x:Name="ResultMonth" />
-                <TextBlock Text="." />
-                <TextBlock x:Name="ResultDay" />
+                <TextBlock Text="{StaticResource Past}"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           Margin="10,10,10,0" />
 
-                <TextBlock Text="" Width="10" />
-                <TextBlock x:Name="ResultHours" />
-                <TextBlock Text=":" />
-                <TextBlock x:Name="ResultMinutes" />
-            </WrapPanel>
-        </StackPanel>
-    </ScrollViewer>
+                <WrapPanel>
+                    <Button Content="{StaticResource Hour}"
+                            ContentStringFormat="1 {0}"
+                            Tag="-1H" />
+                    <Button Content="{StaticResource Hour}"
+                            ContentStringFormat="12 {0}"
+                            Tag="-12H" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="1 {0}"
+                            Tag="-1D" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="2 {0}"
+                            Tag="-2D" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="7 {0}"
+                            Tag="-7D" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="10 {0}"
+                            Tag="-10D" />
+                    <Button Content="{StaticResource Month}"
+                            ContentStringFormat="1 {0}"
+                            Tag="-1M" />
+                    <Button Content="{StaticResource Month}"
+                            ContentStringFormat="2 {0}"
+                            Tag="-2M" />
+                    <Button Content="{StaticResource Year}"
+                            ContentStringFormat="1 {0}"
+                            Tag="-1Y" />
+                </WrapPanel>
+
+                <Border Height="1"
+                        BorderThickness="1"
+                        Margin="10,0"
+                        BorderBrush="Silver" />
+
+                <TextBlock Text="{StaticResource Future}"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           Margin="10,10,10,0" />
+
+                <WrapPanel>
+                    <Button Content="{StaticResource Hour}"
+                            ContentStringFormat="1 {0}"
+                            Tag="+1H" />
+                    <Button Content="{StaticResource Hour}"
+                            ContentStringFormat="12 {0}"
+                            Tag="+12H" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="1 {0}"
+                            Tag="+1D" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="2 {0}"
+                            Tag="+2D" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="7 {0}"
+                            Tag="+7D" />
+                    <Button Content="{StaticResource Day}"
+                            ContentStringFormat="10 {0}"
+                            Tag="+10D" />
+                    <Button Content="{StaticResource Month}"
+                            ContentStringFormat="1 {0}"
+                            Tag="+1M" />
+                    <Button Content="{StaticResource Month}"
+                            ContentStringFormat="2 {0}"
+                            Tag="+2M" />
+                    <Button Content="{StaticResource Year}"
+                            ContentStringFormat="1 {0}"
+                            Tag="+1Y" />
+                </WrapPanel>
+
+                <Border Height="1"
+                        BorderThickness="1"
+                        Margin="10,0"
+                        BorderBrush="Silver" />
+
+                <WrapPanel>
+                    <WrapPanel.Resources>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground"
+                                    Value="White" />
+                            <Setter Property="Margin"
+                                    Value="0,10" />
+                            <Setter Property="FontFamily"
+                                    Value="Consolas" />
+                            <Setter Property="FontSize"
+                                    Value="14" />
+                        </Style>
+                    </WrapPanel.Resources>
+
+                    <TextBlock Text=""
+                               Width="10" />
+                    <TextBlock x:Name="ResultYear" />
+                    <TextBlock Text="." />
+                    <TextBlock x:Name="ResultMonth" />
+                    <TextBlock Text="." />
+                    <TextBlock x:Name="ResultDay" />
+
+                    <TextBlock Text=""
+                               Width="10" />
+                    <TextBlock x:Name="ResultHours" />
+                    <TextBlock Text=":" />
+                    <TextBlock x:Name="ResultMinutes" />
+                </WrapPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
 </Window>
