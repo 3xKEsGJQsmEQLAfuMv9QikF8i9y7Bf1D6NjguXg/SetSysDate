@@ -12,7 +12,7 @@ Set to a date in the past or future based on the current date and time.
 
 # Install
 
-Download SetSysDate.zip from [Releases](https://github.com/3xKEsGJQsmEQLAfuMv9QikF8i9y7Bf1D6NjguXg/SetSysDate/releases).
+Download `SetSysDate.zip` from [Releases](https://github.com/3xKEsGJQsmEQLAfuMv9QikF8i9y7Bf1D6NjguXg/SetSysDate/releases).
 
 Right-click on the zip, select Properties, check `UnBlock` and close with the OK button.
 
